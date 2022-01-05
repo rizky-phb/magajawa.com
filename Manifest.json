@@ -1,0 +1,23 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "shadeofblood@gmail.com",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "permissions": ["webNavigation"],
+
+  "description": "Makes it possible to change chapters using the left and right arrow keys.",
+  "manifest_version": 2,
+  "name": "KissManga Easy Chapter Changer",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://kissmanga.com/Manga/*/*"],
+      "js": ["kissmanga.js"]
+    }
+  ]
+
+}
